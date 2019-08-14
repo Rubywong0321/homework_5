@@ -95,30 +95,51 @@ header nav ul li a{
 }
 #sousou img{
     margin-top: 2%;
+    width: 400px;
+    margin-bottom: 2%;
 }
 #sousou>div>p:nth-of-type(1){
-    font-size: 28px;
-    left: 4px;
-    line-height: 2;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color:#575757;
 }
-#sousou>div>em{
-    font-size: 48px;
+#sousou>div>em:first-of-type{
+    font-size: 36px;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 600;
     color: #C7281E;
+    letter-spacing: 2px;
+}
+#sousou>div>em:nth-of-type(2){
+    font-size: 24px;
+    font-style: italic;
+    color: #C7281E;
+    margin-bottom: 8px;
 }
 #sousou>div>strong>p:nth-of-type(1) {
     font-size: 24px;
     line-height: 38px;
-    margin: 16px 0;
+    margin: 10px 0;
     height: 38px;
     color: #fff;
     background-image: url(../img/quad.gif);
     background-repeat: no-repeat;
     background-position: center;
 }
+#sousou>div button{
+    padding: 3px 10px;
+    margin: 10px auto;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color:#C7281E;
+    transform: skewX(-10deg);
+    margin-left: 10px;
+}
 #sousou>div>p:nth-of-type(2){
-    color: #a8a8a8;
+    color: #c6c6c6;
     line-height: 2;
     color: #555;
     display: inline-block;
@@ -128,6 +149,7 @@ header nav ul li a{
     position: absolute;
     top: 80px;
     right: 15%;
+
 }
 
 .about{
@@ -165,9 +187,14 @@ main>div:nth-of-type(4) ul li{
     width: 100%;
 }
 main>div:nth-of-type(4) ul li div:nth-of-type(1){
-    width: 240px;
-    height: 240px;
+    width: 280px;
+    height: auto;
     display: block;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 main>div:nth-of-type(4) ul li:nth-child(odd) div:nth-of-type(1){
     float: left;
@@ -176,12 +203,12 @@ main>div:nth-of-type(4) ul li:nth-child(even) div:nth-of-type(1){
     float: right;
 }
 main>div:nth-of-type(4) ul li div:nth-of-type(1)>img{
-    width: 100%;
+    width: 110%;
     height: auto;
     
 }
 main>div:nth-of-type(4) ul li div:nth-of-type(2){
-    padding: 20px;
+    padding: 20px 40px;
     height: 240px;
     line-height: 2;
 }
