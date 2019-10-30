@@ -48,12 +48,13 @@ header>nav{
     position: relative;
 }
 header>nav>div>ul{
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content:  space-between;
+    justify-content: space-around;
     position: absolute;
     top: 540px;
+    left: 10%;
 }
 header>nav>div>ul>li{
     line-height: 2;
@@ -85,6 +86,10 @@ main>#BG>section>div{
 }
 main>#BG>section>div>div{
     margin-bottom: 16px;
+}
+main>#BG>section>div>div img{
+    width: 100%;
+    height: auto;
 }
 main>#BG>section>div>h2{
     font-size: 1.5rem;
@@ -163,7 +168,7 @@ main>#two>section>.list>ul>li>.circle{
     background-color: #ffffff;
     position: relative;
 }
-main>#two>section>.list>ul li>.circle>div:nth-of-type(1){
+main>#two>section>.list>ul>li>.circle>div:nth-of-type(1){
     width: 100%;
     height: 100%;
     padding: 14%;
@@ -180,20 +185,20 @@ main>#two>section>.list>ul li>.circle>div:nth-of-type(1){
     opacity: 0;
 
 }
-main>#two>section>.list>ul li>.circle:hover>div:nth-of-type(1){
+main>#two>section>.list>ul>li>.circle:hover>div:nth-of-type(1){
     opacity: 1;
     transition: 0.5s;
 }
-main>#two>section>.list>ul li>.circle>div:nth-of-type(2) {
+main>#two>section>.list>ul>li>.circle>div:nth-of-type(2) {
     display: flex;
     justify-content: center;
 }
-main>#two>section>.list>ul li>.circle>div:nth-of-type(2) img{
+main>#two>section>.list>ul>li>.circle>div:nth-of-type(2) img{
     width: 80%;
     height: auto;
     padding: 10%
 }
-main>#two>section>.list>ul li:nth-of-type(9)>.circle>div:nth-of-type(2) img{
+main>#two>section>.list>ul>li:nth-of-type(9)>.circle>div:nth-of-type(2) img{
     padding: 30% 10%;
 }
 main>#two>section>.list>ul>li>.price{
@@ -256,8 +261,11 @@ main>#three>section>div:nth-of-type(2)>p{
     margin: 5% auto;
 }
 main>#three>section>div:nth-of-type(2)>ul{
-    display: flex;
-    justify-content: space-between;
+    width: 80%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
 }
 main>#three>section>div:nth-of-type(2)>ul>li{
     width: 175px;
@@ -266,8 +274,54 @@ main>#three>section>div:nth-of-type(2)>ul>li{
     border-radius: 50%;
     margin: 5% auto;
 }
+main>#three>section>div:nth-of-type(2)>ul>li img{
+    width: 100%;
+    height: auto;
+}
 footer{
     padding: 2%;
     background-color: #c7281e;
     box-sizing: border-box;
+}
+@media screen and (max-width:1023px){
+    .w1024{
+        width: 100%;
+        margin:  0 auto;
+    }
+    main>#one>section>div:nth-of-type(3){
+        width: 40vw;
+    }
+    main>#two>section>section{
+        width: 90%;
+    }
+    main>#two>section>.list>ul{
+        grid-template-columns: auto auto;
+    }
+    main>#three>section>div:nth-of-type(2)>ul{
+        grid-template-columns: auto auto;
+    }
+    main>#three>section>div:nth-of-type(2)>ul>li{
+        width: 25vw;
+        height: 25vw;
+    }
+}
+@media screen and (max-width:500px){
+    header>nav{
+        position: relative;
+        display: none;
+    }
+    main>#one>section>div:nth-of-type(3){
+        width: 60vw;
+    }
+     main>#two>section>section{
+        width: 90%;
+    }
+    main>#two>section>.list>ul{
+        grid-template-columns: auto;
+    }
+    main>#three>section>div:nth-of-type(2)>ul{
+        grid-template-columns: auto auto;
+    }
+    
+    
 }
