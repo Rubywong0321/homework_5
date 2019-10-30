@@ -26,6 +26,21 @@ body{
     border-radius: 50%;
     margin:  0 auto;
 }
+.flower>.circle:before{
+    content: "NEW";
+    line-height: 75px;
+    width: 75px;
+    height: 75px;
+    display: block;
+    background-image: url(../img/flower.png);
+    background-size: 75px 75px;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    top: -13%
+}
 header{
     width: 100%;
 }
@@ -36,9 +51,9 @@ header>nav>div>ul{
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content:  space-between;
     position: absolute;
-    top: 540px
+    top: 540px;
 }
 header>nav>div>ul>li{
     line-height: 2;
@@ -47,22 +62,11 @@ header>nav>div>ul>li>a{
     padding: 1vw;
     position: relative;
     color: #c7281e;
-}
-header>nav>div>ul>li>a:before{
-    content: "/ ";
-    color: #c7281e;
-    font-size: 4rem;
-    position: absolute;
-    top: -100%;
-    left: -50%;
-}
-header>nav>div>ul>li>a:after{
-    content: "/ ";
-    color: #c7281e;
-    font-size: 4rem;
-    position: absolute;
-    top: -100%;
-    left: 130%;
+    padding: 1vw 2vw;
+    border-left: 2px  #c7281e solid;
+    border-right: 2px  #c7281e solid;
+    transform: skewX(-20deg);
+    display: inline-block;
 }
 main>#BG{
     width: 100%;
@@ -157,22 +161,7 @@ main>#two>section>.list>ul>li>.circle{
     height: 200px;
     border-radius: 50%;
     background-color: #ffffff;
-    overflow: hidden;
     position: relative;
-}
-main>#two>section>.list>ul>li>.circle:before{
-    content: "A";
-    line-height: 75px;
-    width: 75px;
-    height: 75px;
-    display: block;
-    background-image: url(../img/flower.png);
-    background-size: 75px 75px;
-    background-repeat: no-repeat;
-
-    position: absolute;
-    z-index: 9;
-    right: 0;
 }
 main>#two>section>.list>ul li>.circle>div:nth-of-type(1){
     width: 100%;
@@ -181,24 +170,24 @@ main>#two>section>.list>ul li>.circle>div:nth-of-type(1){
     font-size: 0.85rem;
     line-height: 1.7;
     letter-spacing: 2px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(83, 83, 83, 0.5);
+    background-color: rgba(83, 83, 83, 0.6);
     color: #fff;
     position: absolute;
-    top: 100%;
+    opacity: 0;
 
 }
 main>#two>section>.list>ul li>.circle:hover>div:nth-of-type(1){
-    top: 0;
+    opacity: 1;
     transition: 0.5s;
 }
 main>#two>section>.list>ul li>.circle>div:nth-of-type(2) {
     display: flex;
     justify-content: center;
 }
-
 main>#two>section>.list>ul li>.circle>div:nth-of-type(2) img{
     width: 80%;
     height: auto;
@@ -236,11 +225,47 @@ main>#three>section>div:nth-of-type(2){
     padding: 5%;    
     padding-top: 100px;
     box-sizing: border-box;
-    
+    color: #c7281e;
+    line-height: 1.5;
 }
+main>#three>section>div:nth-of-type(2)>h2{
+    font-size: 2.3rem;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+main>#three>section>div:nth-of-type(2)>h2>strong{
+    background-color: #c7281e;
+    font-size: 2.6rem;
+    padding: 2px 4px;
+    color: #fff;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+main>#three>section>div:nth-of-type(2)>h3{
+    font-size: 2rem;
+    text-align: center;
+    transform: skewX(-20deg);
+    letter-spacing: 6px;
+}
+main>#three>section>div:nth-of-type(2)>p{
+    width: 70%;
+    font-size: 1.1rem;
 
-
-
+    margin: 5% auto;
+}
+main>#three>section>div:nth-of-type(2)>ul{
+    display: flex;
+    justify-content: space-between;
+}
+main>#three>section>div:nth-of-type(2)>ul>li{
+    width: 175px;
+    height: 175px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 5% auto;
+}
 footer{
     padding: 2%;
     background-color: #c7281e;
