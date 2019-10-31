@@ -86,6 +86,8 @@ main>#BG>section>div{
 }
 main>#BG>section>div>div{
     margin-bottom: 16px;
+    width: 40vw;
+    margin: 0 auto;
 }
 main>#BG>section>div>div img{
     width: 100%;
@@ -288,6 +290,9 @@ footer{
         width: 100%;
         margin:  0 auto;
     }
+    main>#BG>section>div>div{
+        width: 65vw;
+    }
     main>#one>section>div:nth-of-type(3){
         width: 40vw;
     }
@@ -306,6 +311,9 @@ footer{
     }
 }
 @media screen and (max-width:500px){
+    main>#BG>section>div>div{
+        width: 75vw;
+    }
     header>nav{
         position: relative;
         display: none;
