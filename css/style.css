@@ -372,7 +372,40 @@ footer{
     .menu-show .menu{
         max-height: 500px;
       }
-        main>#two>section>.list>ul{
-        grid-template-columns:  auto;
+    main>#BG{
+        height: 550px;
+        margin-bottom: 0
+    }
+    main>#BG>section{
+        height: 550px;
+    }
+    main>#BG>section>div{
+        padding: 15% 10%;
+    }
+    main>#BG>section>div>div{
+        width: 80vw;
+    }
+    main>#BG>section>div>h2{
+        font-size: 2rem;
+    }
+    main>#BG>section>div>h1{
+        font-size: 2rem;
+    }
+    main>#BG>section>div>p{
+        font-size: 1.5rem;
+    }
+    main>#one>section>div:nth-of-type(2){
+        width: 85%;
+    }
+    main>#two>section>section{
+        width: 80%;
+        margin:  0 auto;
+        padding-top: 25%;
+    }
+    main>#two>section>.list>ul{
+        grid-template-columns: auto;
+    }
+    footer{
+        padding: 5%;
     }
 }
