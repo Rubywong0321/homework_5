@@ -323,7 +323,7 @@ footer{
         width: 100%;
         margin: 0;
         display: block;
-        position: absolute;
+        position: relative;
         top: 5rem;
         left: 0%
             
@@ -370,6 +370,9 @@ footer{
         color: #fff;
       } 
     .menu-show .menu{
-        max-height: 500px
+        max-height: 500px;
       }
+        main>#two>section>.list>ul{
+        grid-template-columns:  auto;
+    }
 }
