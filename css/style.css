@@ -41,6 +41,10 @@ body{
     right: 0;
     top: -13%
 }
+.showMenu{
+  display:none;
+  z-index: 999;
+}
 header{
     width: 100%;
 }
@@ -68,6 +72,7 @@ header>nav>div>ul>li>a{
     border-right: 2px  #c7281e solid;
     transform: skewX(-20deg);
     display: inline-block;
+    z-index: 999;
 }
 main>#BG{
     width: 100%;
@@ -314,22 +319,57 @@ footer{
     main>#BG>section>div>div{
         width: 75vw;
     }
-    header>nav{
+    header>nav>div>ul{
+        width: 100%;
+        margin: 0;
+        display: block;
+        position: absolute;
+        top: 5rem;
+        left: 0%
+            
+    }
+    header>nav>div>ul>li>a{
+        padding: 1vw;
         position: relative;
-        display: none;
+        color: #c7281e;
+        border-left: 0;
+        border-right: 0;
+        transform: skewX(0deg);
     }
-    main>#one>section>div:nth-of-type(3){
-        width: 60vw;
+    .menu {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        position: absolute;
+        z-index: 100;
+        right: 0;
+        background-color: #c7281e;
+        text-align: center;
+      }
+    .menu li{
+        border: 2px #fff solid;
     }
-     main>#two>section>section{
-        width: 90%;
-    }
-    main>#two>section>.list>ul{
-        grid-template-columns: auto;
-    }
-    main>#three>section>div:nth-of-type(2)>ul{
-        grid-template-columns: auto auto;
-    }
-    
-    
+    .menu li a{
+        color:white;
+        letter-spacing: 4px;
+        width: 100%;
+        padding:2vw;
+      }
+    .menu li a:hover{
+        background: #ffe8d2;
+        color: #c7281e;
+      }
+    .showMenu{
+        position: fixed;
+        display:block;
+        font-size:3rem;
+        right: 2vw;
+        top: 2vw;
+        background-color:  #c7281e;
+        padding: 2vw;
+        color: #fff;
+      } 
+    .menu-show .menu{
+        max-height: 500px
+      }
 }
